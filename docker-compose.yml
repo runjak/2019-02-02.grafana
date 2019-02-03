@@ -7,3 +7,10 @@ services:
     ports:
       - "3000"
     network_mode: "host"
+
+  # https://hub.docker.com/r/prom/prometheus
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - "9090"
+    network_mode: "host"
